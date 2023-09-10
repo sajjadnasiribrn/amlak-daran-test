@@ -24,8 +24,6 @@ return new class extends Migration
 
             $table->string('bank_account_number', 255);
 
-            $table->primary(['first_name', 'last_name', 'date_of_birth']);
-
             $table->timestamps();
         });
     }
