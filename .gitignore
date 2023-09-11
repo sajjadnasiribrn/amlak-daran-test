@@ -24,7 +24,7 @@ src/.idea/modules.xml
 src/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd
 src/.idea/commandlinetools/Laravel_5_17_21__9_45_AM.xml
 src/.idea/runConfigurations
-
+.idea
 .idea/*
 .idea/
 .idea/workspace.xml
