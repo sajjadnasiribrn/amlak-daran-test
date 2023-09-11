@@ -1,0 +1,86 @@
+openapi: 3.0.0
+info:
+title: amlak daran
+version: 1.0.0
+servers:
+- url: http://127.0.0.1:8000
+paths:
+/api/create:
+post:
+tags:
+- default
+summary: create
+requestBody:
+content:
+multipart/form-data:
+schema:
+type: object
+properties:
+first_name:
+type: string
+example: sajjad
+last_name:
+type: string
+example: nasiri
+phone_number:
+type: integer
+example: '09211422524'
+email:
+type: string
+example: sajjad@gmail.com
+bank_account_number:
+type: integer
+example: '123456'
+date_of_birth:
+type: string
+example: '1996-02-08'
+responses:
+'200':
+description: Successful response
+content:
+application/json: {}
+/api/read:
+get:
+tags:
+- default
+summary: read
+responses:
+'200':
+description: Successful response
+content:
+application/json: {}
+/api/update/1:
+post:
+tags:
+- default
+summary: update
+requestBody:
+content:
+multipart/form-data:
+schema:
+type: object
+properties:
+first_name:
+type: string
+example: ali
+parameters:
+- name: _method
+in: query
+schema:
+type: string
+example: PATCH
+responses:
+'200':
+description: Successful response
+content:
+application/json: {}
+/api/delete/1:
+delete:
+tags:
+- default
+summary: delete
+responses:
+'200':
+description: Successful response
+content:
+application/json: {}
