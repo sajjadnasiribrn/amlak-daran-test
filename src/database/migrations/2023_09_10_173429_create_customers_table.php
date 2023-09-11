@@ -20,7 +20,7 @@ return new class extends Migration
 
             $table->string('phone_number', 14);
 
-            $table->string('email', 255);
+            $table->string('email', 255)->unique();
 
             $table->string('bank_account_number', 255);
 
