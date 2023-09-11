@@ -29,11 +29,11 @@ class CustomerController extends Controller
         }
     }
 
-    public function read(Customer $customer)
+    public function read()
     {
         return response()->json([
             'status' => 'ok',
-            'customer' => $customer
+            'customers' => Customer::all()
         ],200);
     }
 
