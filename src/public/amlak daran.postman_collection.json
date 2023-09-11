@@ -46,7 +46,7 @@
 						}
 					]
 				},
-				"url": "http://127.0.0.1:8000/api/create"
+				"url": "http://127.0.0.1/api/create"
 			},
 			"response": []
 		},
@@ -55,7 +55,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://127.0.0.1:8000/api/read"
+				"url": "http://127.0.0.1/api/read"
 			},
 			"response": []
 		},
@@ -75,7 +75,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/update/1?_method=PATCH",
+					"raw": "http://127.0.0.1/api/update/1?_method=PATCH",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -104,7 +104,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "http://127.0.0.1:8000/api/delete/1"
+				"url": "http://127.0.0.1/api/delete/1"
 			},
 			"response": []
 		}
