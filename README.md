@@ -39,8 +39,8 @@ docker compose up -d --build
 and finally you should run these commands:
 ```
 docker-compose run --rm composer update
-docker-compose run --rm key:generate
-docker-compose run --rm optimize:clear
+docker-compose run --rm artisan key:generate
+docker-compose run --rm artisan optimize:clear
 docker-compose run --rm artisan migrate
 ```
 
